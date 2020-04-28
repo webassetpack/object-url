@@ -1,0 +1,17 @@
+{
+    "extends" : "./tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./spec",
+        "declaration": false,
+        "sourceMap": false,
+        "resolveJsonModule": true,
+        "esModuleInterop": true
+    },
+    "include": [
+        "**/*.ts"
+    ],
+    "exclude": [
+        "lib",
+        "node_modules"
+    ]
+}
