@@ -1,6 +1,14 @@
 {
-    "dice.png": "./spec/support/test-pkg/dice.png",
-    "earth.gif": "./spec/support/test-pkg/earth.gif",
-    "img.jpg": "./spec/support/test-pkg/img.jpg",
-    "img.jpeg": "./spec/support/test-pkg/img.jpeg"
+    "dice.png": {
+        "path": "./spec/support/test-pkg/dice.png"
+    },
+    "earth.gif": {
+        "path": "./spec/support/test-pkg/earth.gif"
+    },
+    "img.jpg": {
+        "path": "./spec/support/test-pkg/img.jpg"
+    },
+    "img.jpeg": {
+        "path": "./spec/support/test-pkg/img.jpeg"
+    }
 }
