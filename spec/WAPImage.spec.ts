@@ -37,10 +37,10 @@ describe('WAPImage', () => {
     });
 
     const files: Array<string> = [
-        'dice.png'
-        // 'earth.gif',
-        // 'img.jpeg',
-        // 'img.jpg'
+        'dice.png',
+        'earth.gif',
+        'img.jpeg',
+        'img.jpg'
     ];
 
     let checksums: IDictionary<string> = {
