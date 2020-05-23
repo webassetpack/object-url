@@ -1,14 +1,14 @@
 
 import * as api from '../src/api';
-import WAPImage from '../src/WAPImage';
+import WAPObjectUrl from '../src/WAPObjectUrl';
 import APIDefault from '../src/api';
 
 describe('Public API', () => {
     it('Named import', () => {
-        expect(api.WAPImage).toBe(WAPImage);
+        expect(api.WAPObjectUrl).toBe(WAPObjectUrl);
     });
 
     it('Default import', () => {
-        expect(APIDefault).toBe(WAPImage);
+        expect(APIDefault).toBe(WAPObjectUrl);
     });
 });

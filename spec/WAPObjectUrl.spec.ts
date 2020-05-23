@@ -4,30 +4,25 @@
 import {
     WAPTestTools,
     WAPReader,
-    // WebAssetPack,
     PluginManager,
     WAPTestFactory,
     TestWAP
 } from '@wap/test-tools';
 import {IDictionary} from '@totalpave/interfaces';
 import Blob from 'node-blob';
-import WAPImage from '../src/WAPImage';
+import WAPObjectUrl from '../src/WAPObjectUrl';
 import def from './support/def.json';
 
-//TODO: Add MD5 hash checks has a way to verify that the test images
-//      are binary-consistent when read from the wap file
-
-
-describe('WAPImage', () => {
+describe('WAPObjectUrl', () => {
     let reader: WAPReader = new WAPReader(new WAPTestFactory());
     let pack: TestWAP = null;
 
     beforeAll(async () => {
         (<any>global).Blob = Blob;
-        PluginManager.getInstance().addPlugin('jpg', new WAPImage());
-        PluginManager.getInstance().addPlugin('jpeg', new WAPImage());
-        PluginManager.getInstance().addPlugin('gif', new WAPImage());
-        PluginManager.getInstance().addPlugin('png', new WAPImage());
+        PluginManager.getInstance().addPlugin('jpg', new WAPObjectUrl());
+        PluginManager.getInstance().addPlugin('jpeg', new WAPObjectUrl());
+        PluginManager.getInstance().addPlugin('gif', new WAPObjectUrl());
+        PluginManager.getInstance().addPlugin('png', new WAPObjectUrl());
         let buffer: ArrayBuffer = await WAPTestTools.compile(def);
         pack = <TestWAP>(await reader.read(buffer));
     });
@@ -58,7 +53,6 @@ describe('WAPImage', () => {
         });
 
         it(`MD5 Checksum Check: ${file}`, async () => {
-            console.warn(pack.hexdump(file).slice(0, 100));
             expect(pack.md5(file)).toBe(checksums[file]);
         });
     });

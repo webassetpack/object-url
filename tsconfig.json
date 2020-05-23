@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "es3",
-        "module": "ES2015",
+        "module": "CommonJS",
         "declaration": true,
         "sourceMap": true,
         "outDir": "./lib",
@@ -21,6 +21,7 @@
     "exclude": [
         "**/*.spec.ts",
         "*/.spec.ts",
+        "dist",
         "tests",
         "lib",
         "spec",

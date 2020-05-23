@@ -1,4 +1,4 @@
 
-import {WAPImage} from './WAPImage';
-export {WAPImage};
-export default WAPImage;
+import {WAPObjectUrl} from './WAPObjectUrl';
+export {WAPObjectUrl};
+export default WAPObjectUrl;

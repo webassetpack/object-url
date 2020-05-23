@@ -8,30 +8,40 @@ export default [
         input: 'src/api.ts',
         output: [
             {
-                file: 'dist/cjs/wap-image.js',
-                format: 'cjs'
+                file: 'dist/cjs/wap-object-url.js',
+                format: 'cjs',
+                name: 'wapObjectUrl',
+                exports: 'named'
             },
             {
-                file: 'dist/iife/wap-image.js',
+                file: 'dist/iife/wap-object-url.js',
                 format: 'iife',
-                name: 'wapImage'
+                name: 'wapObjectUrl',
+                exports: 'named'
             },
             {
-                file: 'dist/umd/wap-image.js',
+                file: 'dist/umd/wap-object-url.js',
                 format: 'umd',
-                name: 'wap-plugin-image'
+                name: 'wap-plugin-object-url',
+                exports: 'named'
             },
             {
-                file: 'dist/amd/wap-image.js',
-                format: 'amd'
+                file: 'dist/amd/wap-object-url.js',
+                format: 'amd',
+                name: 'wapObjectUrl',
+                exports: 'named'
             },
             {
-                file: 'dist/es/wap-image.js',
-                format: 'es'
+                file: 'dist/es/wap-object-url.js',
+                format: 'es',
+                name: 'wapObjectUrl',
+                exports: 'named'
             },
             {
-                file: 'dist/system/wap-image.js',
-                format: 'system'
+                file: 'dist/system/wap-object-url.js',
+                format: 'system',
+                name: 'wapObjectUrl',
+                exports: 'named'
             }
         ],
         plugins: [

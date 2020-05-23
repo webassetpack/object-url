@@ -1,4 +1,4 @@
-var wapImage = (function (exports) {
+var wapObjectUrl = (function (exports) {
     'use strict';
 
     /*! *****************************************************************************
@@ -159,12 +159,12 @@ var wapImage = (function (exports) {
     var api_5 = api.BYTE_POS_MANIFEST_LENGTH;
     var api_6 = api.BYTE_HEADER_SIZE;
 
-    var WAPImage = /** @class */ (function (_super) {
-        __extends(WAPImage, _super);
-        function WAPImage() {
+    var WAPObjectUrl = /** @class */ (function (_super) {
+        __extends(WAPObjectUrl, _super);
+        function WAPObjectUrl() {
             return _super !== null && _super.apply(this, arguments) || this;
         }
-        WAPImage.prototype._read = function (data, type) {
+        WAPObjectUrl.prototype._read = function (data, type) {
             return __awaiter(this, void 0, void 0, function () {
                 var blob;
                 return __generator(this, function (_a) {
@@ -173,11 +173,11 @@ var wapImage = (function (exports) {
                 });
             });
         };
-        return WAPImage;
+        return WAPObjectUrl;
     }(api_1));
 
-    exports.WAPImage = WAPImage;
-    exports.default = WAPImage;
+    exports.WAPObjectUrl = WAPObjectUrl;
+    exports.default = WAPObjectUrl;
 
     return exports;
 

@@ -1,8 +1,4 @@
-(function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-    typeof define === 'function' && define.amd ? define(['exports'], factory) :
-    (global = global || self, factory(global['wap-plugin-image'] = {}));
-}(this, (function (exports) { 'use strict';
+define(['exports'], function (exports) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation.
@@ -162,12 +158,12 @@
     var api_5 = api.BYTE_POS_MANIFEST_LENGTH;
     var api_6 = api.BYTE_HEADER_SIZE;
 
-    var WAPImage = /** @class */ (function (_super) {
-        __extends(WAPImage, _super);
-        function WAPImage() {
+    var WAPObjectUrl = /** @class */ (function (_super) {
+        __extends(WAPObjectUrl, _super);
+        function WAPObjectUrl() {
             return _super !== null && _super.apply(this, arguments) || this;
         }
-        WAPImage.prototype._read = function (data, type) {
+        WAPObjectUrl.prototype._read = function (data, type) {
             return __awaiter(this, void 0, void 0, function () {
                 var blob;
                 return __generator(this, function (_a) {
@@ -176,12 +172,12 @@
                 });
             });
         };
-        return WAPImage;
+        return WAPObjectUrl;
     }(api_1));
 
-    exports.WAPImage = WAPImage;
-    exports.default = WAPImage;
+    exports.WAPObjectUrl = WAPObjectUrl;
+    exports.default = WAPObjectUrl;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
-})));
+});
