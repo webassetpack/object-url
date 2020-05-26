@@ -34,8 +34,7 @@
     "@types/rewire": "2.5.28",
     "@typescript-eslint/eslint-plugin": "2.29.0",
     "@typescript-eslint/parser": "2.29.0",
-    "@wap/core": "git+https://github.com/webassetpack/core.git",
-    "@wap/test-tools": "git+https://github.com/webassetpack/test-tools.git",
+    "@wap/test-tools": "0.0.1",
     "eslint": "6.8.0",
     "jasmine-spec-reporter": "5.0.1",
     "jsdom": "16.2.2",
@@ -49,6 +48,7 @@
   },
   "dependencies": {
     "@totalpave/interfaces": "1.0.0",
+    "@wap/core": "0.0.1",
     "@types/node": "12.12.37",
     "@types/pako": "1.0.1",
     "pako": "1.0.11",
